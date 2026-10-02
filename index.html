@@ -1,1 +1,219 @@
-<h1>Ola mundo</h1>
+```html
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BlueSpark Cloud — Deploy Demo</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #0f172a;
+        }
+
+        header {
+            height: 64px;
+            background: #ffffff;
+            border-bottom: 1px solid #e2e8f0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 7%;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #4f46e5;
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .dot {
+            width: 9px;
+            height: 9px;
+            background: #22c55e;
+            border-radius: 50%;
+        }
+
+        main {
+            min-height: calc(100vh - 64px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 7px 14px;
+            border-radius: 20px;
+            background: #eef2ff;
+            color: #4f46e5;
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(36px, 7vw, 64px);
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #4f46e5;
+        }
+
+        .description {
+            max-width: 600px;
+            margin: auto;
+            color: #64748b;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .card {
+            margin: 40px auto 0;
+            max-width: 600px;
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 14px;
+            padding: 25px;
+            text-align: left;
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 13px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .row:last-child {
+            border-bottom: none;
+        }
+
+        .label {
+            color: #64748b;
+        }
+
+        .value {
+            font-weight: bold;
+        }
+
+        .success {
+            color: #16a34a;
+        }
+
+        footer {
+            margin-top: 35px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 0 20px;
+            }
+
+            .status {
+                display: none;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">⚡ BlueSpark Cloud</div>
+
+    <div class="status">
+        <span class="dot"></span>
+        Sistema operacional
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <div class="badge">
+            STATIC DEPLOY
+        </div>
+
+        <h1>
+            Seu site está<br>
+            <span>online.</span>
+        </h1>
+
+        <p class="description">
+            Este é um site estático publicado através da
+            BlueSpark Cloud. O deploy foi concluído com sucesso.
+        </p>
+
+        <div class="card">
+
+            <div class="row">
+                <span class="label">Projeto</span>
+                <span class="value">Demo Website</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Tipo</span>
+                <span class="value">Static Website</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Deploy</span>
+                <span class="value success">✓ Successful</span>
+            </div>
+
+            <div class="row">
+                <span class="label">Platform</span>
+                <span class="value">BlueSpark Cloud</span>
+            </div>
+
+        </div>
+
+        <footer>
+            Powered by BlueSpark Cloud · © 2026 BlueSpark MZ
+        </footer>
+
+    </div>
+</main>
+
+</body>
+</html>
+```
